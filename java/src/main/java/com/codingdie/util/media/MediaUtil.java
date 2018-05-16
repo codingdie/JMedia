@@ -32,7 +32,7 @@ public class MediaUtil {
     }
 
     public static void main(String[] args) {
-        System.out.println(parseVideo("/Users/codingdie/Desktop/video/test.mp4"));
+        System.out.println(JSONObject.toJSONString(parseVideo("/Users/codingdie/Desktop/video/test.mp4")));
     }
 }
 
