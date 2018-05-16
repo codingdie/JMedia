@@ -15,7 +15,6 @@ repositories {
 
 dependencies {
     compile group: 'com.alibaba', name: 'fastjson', version: '1.2.46'
-    implementation 'com.github.codingdie:JMedia:1.0.0'
 }
 jar {
     baseName = 'jmedia'
