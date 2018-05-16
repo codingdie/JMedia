@@ -25,3 +25,5 @@ target_link_libraries(mediatest swresample)
 target_link_libraries(mediatest avcodec)
 target_link_libraries(mediatest avformat)
 target_link_libraries(mediatest avfilter)
+INSTALL(TARGETS media
+        LIBRARY DESTINATION lib)

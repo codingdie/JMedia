@@ -1,2 +1,10 @@
 media/.idea
 media/cmake-build-debug
+media/CMakeFiles
+media/cmake_install.cmake
+media/CMakeCache.txt
+media/install_manifest.txt
+media/libmedia.dylib
+media/Makefile
+media/media.cbp
+media/mediatest
