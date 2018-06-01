@@ -6,6 +6,7 @@ set(CMAKE_CXX_STANDARD 11)
 set(JNI_INCLUDE "$ENV{JAVA_HOME}/include")
 include_directories(${JNI_INCLUDE})
 include_directories(${JNI_INCLUDE}/darwin)
+include_directories(${JNI_INCLUDE}/linux)
 include_directories(/usr/local/include)
 LINK_DIRECTORIES(/usr/local/lib)
 
