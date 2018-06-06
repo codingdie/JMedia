@@ -15,6 +15,8 @@ extern "C" {
 JNIEXPORT jstring JNICALL Java_com_codingdie_util_media_MediaUtil_getVideoInfo
         (JNIEnv *, jclass, jstring);
 
+JNIEXPORT jstring JNICALL Java_com_codingdie_util_media_MediaUtil_getImageInfo
+        (JNIEnv *, jclass, jstring);
 #ifdef __cplusplus
 }
 #endif

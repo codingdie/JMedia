@@ -8,3 +8,5 @@
 #endif //JNI_MEDIAUTIL_H
 
 char* getVideoInfo(const char* path);
+
+char* getImageInfo(const char* path);

@@ -23,6 +23,8 @@ public class MediaUtil {
     }
     private static native String getVideoInfo(String filePath);
 
+    private static native String getImageInfo(String filePath);
+
     public static  VideoInfo parseVideo(String filePath){
         String videoInfo = getVideoInfo(filePath);
         if(videoInfo!=null&&videoInfo.length()>0&&!videoInfo.equals("null")){
@@ -30,9 +32,16 @@ public class MediaUtil {
         }
         return null;
     }
+    public static  ImageInfo parseImage(String filePath){
+        String videoInfo = getImageInfo(filePath);
+        if(videoInfo!=null&&videoInfo.length()>0&&!videoInfo.equals("null")){
+            return JSONObject.parseObject(videoInfo,ImageInfo.class);
+        }
+        return null;
+    }
 
     public static void main(String[] args) {
-        System.out.println(JSONObject.toJSONString(parseVideo("/Users/codingdie/Desktop/video/test.mp4")));
+        System.out.println(JSONObject.toJSONString(parseImage("/Users/codingdie/Desktop/test_j.jpg")));
     }
 }
 
